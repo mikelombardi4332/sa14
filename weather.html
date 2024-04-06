@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #weatherInfo {
+      text-align: left;
+    }
+
+    .weather-card {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="weatherInfo">
+    </div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
